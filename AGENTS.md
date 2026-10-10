@@ -5,6 +5,9 @@ Speak to Welison in Brazilian Portuguese. Write operational instructions and gen
 ## Start
 Read docs/architecture.md and the relevant system below. For an existing episode, read its state.json, the entire historia.md, roteiro.md when it exists, the series bible, involved character records, and relevant adjacent scenes. Missing files are missing evidence, not permission to invent canon.
 
+## Production entry point
+For a new production, follow docs/workflows/iniciar.md. Claude Code uses /iniciar; Codex uses $iniciar. See docs/commands.md for setup and invocation. Preserve the reference-first and user-selected-direction gates.
+
 ## Stage router
 - Reference ingestion and analysis: docs/systems/01-reference-analysis.md
 - Narrative DNA, direction options and collaborative story: docs/systems/02-story-modeling.md

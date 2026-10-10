@@ -1,6 +1,9 @@
 # TikTok Dark
 Base de produção para analisar referências, explorar caminhos de modelagem e produzir curtas com imagens no Codex e vídeos no Google Flow.
 
+## Iniciar com um comando
+No Claude Code: `/iniciar`. No Codex: `$iniciar`. O agente pede a referência, usa o Watch quando instalado, analisa e oferece direções para você escolher. Veja [docs/commands.md](docs/commands.md).
+
 ## Comece aqui
 1. Abra esta pasta no Claude Code ou Codex. Os arquivos de instrução já estão prontos; não precisa usar /init para recriá-los.
 2. Confira docs/quickstart.md e configure Watch conforme docs/integrations/watch.md.
