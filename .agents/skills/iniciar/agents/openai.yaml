@@ -1,0 +1,7 @@
+interface:
+  display_name: "Iniciar produção"
+  short_description: "Analisar referência e explorar caminhos de história"
+  default_prompt: "Use $iniciar to start a new video production from my reference."
+
+policy:
+  allow_implicit_invocation: false
