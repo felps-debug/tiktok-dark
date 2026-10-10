@@ -11,7 +11,7 @@ Identify visible face shape, skin tone, hair/hairline, eyebrows, facial hair, ag
 Generate ONE character reference: full body FRONT view, neutral standing pose, arms relaxed, entire silhouette and shoes visible, plain white background, vertical 9:16. This is a character identity sheet, despite the name profilepic; not a circular avatar or a scene. Use the photo for identity, not its pose, camera angle or background. Preserve visible outfit unless the user/approved brief specifies another; if the photo crops the body, use simple compatible clothing for unseen parts without presenting it as observed. No scene action, text, labels, watermark, incidental story props, extra people, side/back views or automatic turnaround. Signature accessories only when visible in the reference or explicitly requested.
 
 ## Execute, then review
-The invocation authorizes one generated candidate once the photo is available: do not stop at writing a prompt or require a redundant design approval. Assemble a complete English prompt with observed likeness, requested/default style and composition. Inspect the runtime's actual image-generation tool/skill instructions. Attach the inspected reference through its supported mechanism; do not invent tool names, flags or launch another agent automatically. If the tool cannot receive the reference, state the limitation instead of generating an unrelated face. Use the real image-generation tool when available.
+Follow docs/prompt-delivery.md: deliver ONE prompt with ordered photo attachments and wait for explicit prompt approval before generating a candidate. The invocation does not bypass this gate. Assemble a complete English prompt with observed likeness, requested/default style and composition. Inspect the runtime's actual image-generation tool/skill instructions. Attach the inspected reference through its supported mechanism; do not invent tool names, flags or launch another agent automatically. If the tool cannot receive the reference, state the limitation instead of generating an unrelated face. After prompt approval, use the real image-generation tool when available and generation is requested.
 
 If generation is unavailable (including Claude without image tools), return the full ready-to-use prompt and tell the user to run it with the same photo in Codex with image generation available. A CLI skill cannot create image capability by itself. Never claim that an image was generated on this fallback. Report actual errors without fabricating results.
 
@@ -19,7 +19,7 @@ Show the actual generated candidate and ask for approval or adjustments. Never m
 
 ## Acceptance cases
 - No photo: ask for it, no generation.
-- Accessible photo and image tool: inspect it, generate one front candidate, wait for approval.
+- Accessible photo and image tool: inspect it, deliver one prompt, wait for prompt approval, then generate one front candidate when requested and wait for image approval.
 - Photo but no generation tool: provide full prompt, state no image generated.
 - Existing approved character: preserve identity; version any requested change and do not overwrite approval.
 - User asks only for a prompt: respect that restriction and do not generate.
