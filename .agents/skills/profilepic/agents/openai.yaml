@@ -1,0 +1,7 @@
+interface:
+  display_name: "Criar personagem animado"
+  short_description: "Gerar personagem de frente usando uma foto de referência"
+  default_prompt: "Use $profilepic to generate an animated character from my reference photo."
+
+policy:
+  allow_implicit_invocation: false
