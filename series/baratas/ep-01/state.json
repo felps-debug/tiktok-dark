@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "series_id": "baratas",
+  "episode_id": "ep-01",
+  "stage": "import_pending",
+  "selected_direction": null,
+  "story": {
+    "path": null,
+    "version": null,
+    "status": "draft"
+  },
+  "script": {
+    "path": null,
+    "version": null,
+    "status": "draft"
+  },
+  "target_edit_duration_seconds": null,
+  "generation_durations_seconds": [],
+  "characters": [],
+  "scenes": [],
+  "approval_events": [],
+  "blockers": [
+    "Importar história e roteiro vigentes",
+    "Importar referências reais e confirmar versões aprovadas"
+  ]
+}
