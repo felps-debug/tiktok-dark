@@ -8,6 +8,9 @@ Read docs/architecture.md and the relevant system below. For an existing episode
 ## Production entry point
 For a new production, follow docs/workflows/iniciar.md. Claude Code uses /iniciar; Codex uses $iniciar. See docs/commands.md for setup and invocation. Preserve the reference-first and user-selected-direction gates.
 
+## Prompt delivery and approval (mandatory)
+Read docs/prompt-delivery.md for all character, scene-image and video prompts. Deliver exactly ONE copy-ready prompt, list the actual image attachments in order separately, then STOP for explicit approval of that prompt. Never auto-generate the image, write the next prompt, produce alternate prompts or a Plan B before that approval. Approval of a prompt does not approve its eventual rendered image. Read internal narrative documents but never reference documents/paths/metadata inside the external generation prompt. Never create .txt prompt files; use versioned .md. These current rules override older templates, historical examples and command instructions.
+
 ## Stage router
 - Reference ingestion and analysis: docs/systems/01-reference-analysis.md
 - Narrative DNA, direction options and collaborative story: docs/systems/02-story-modeling.md
