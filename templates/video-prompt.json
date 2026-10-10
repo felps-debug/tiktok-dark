@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scene_id": "replace-me",
+  "clip_id": "replace-me",
+  "status": "draft",
+  "version": 1,
+  "aspect_ratio": "9:16",
+  "approved_image_path": null,
+  "duration_seconds": null,
+  "context_sources": [],
+  "first_frame_description": "",
+  "camera": {
+    "movement": "",
+    "start": "",
+    "end": ""
+  },
+  "timeline": [],
+  "dialogue": [],
+  "speech_budget": {
+    "word_count": 0,
+    "available_seconds": null,
+    "estimated_words_per_second": null,
+    "risk": "unassessed"
+  },
+  "silent_listeners": [],
+  "sfx": [],
+  "end_state": "",
+  "avoid": [],
+  "video_prompt": "",
+  "flow_result": null
+}

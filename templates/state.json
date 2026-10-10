@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "series_id": "replace-me",
+  "episode_id": "replace-me",
+  "stage": "reference_analysis",
+  "selected_direction": null,
+  "story": {
+    "path": null,
+    "version": null,
+    "status": "draft"
+  },
+  "script": {
+    "path": null,
+    "version": null,
+    "status": "draft"
+  },
+  "target_edit_duration_seconds": null,
+  "generation_durations_seconds": [],
+  "characters": [],
+  "scenes": [],
+  "approval_events": [],
+  "blockers": []
+}

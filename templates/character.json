@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "character_id": "replace-me",
+  "status": "draft",
+  "story_path": null,
+  "role": "",
+  "age": "",
+  "personality": "",
+  "species": "",
+  "identity_locked": [],
+  "individuality_traits": [],
+  "base_outfit": "",
+  "style_anchor": null,
+  "front_prompt": "",
+  "approved_reference": null,
+  "approval": null,
+  "optional_views": []
+}

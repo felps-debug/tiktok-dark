@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scene_id": "replace-me",
+  "status": "draft",
+  "version": 1,
+  "aspect_ratio": "9:16",
+  "frame_moment": "",
+  "context_sources": [],
+  "references": [],
+  "camera": {
+    "shot_type": "",
+    "angle": ""
+  },
+  "layout": {
+    "image_left": "",
+    "image_right": "",
+    "foreground": "",
+    "background": ""
+  },
+  "scale": {
+    "anchors": []
+  },
+  "characters": [],
+  "extras": [],
+  "props": [],
+  "environment": {
+    "place": "",
+    "world_cues": [],
+    "light": ""
+  },
+  "continuity": [],
+  "avoid": [],
+  "image_prompt": "",
+  "check_after_generation": [],
+  "generated_image": null
+}

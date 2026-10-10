@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "source_url": null,
+  "source_file": null,
+  "duration_seconds": null,
+  "engine": null,
+  "frames_available": 0,
+  "frames_inspected": 0,
+  "frame_paths": [],
+  "transcript_path": null,
+  "audio_inspected": false,
+  "coverage_notes": [],
+  "uncertainties": []
+}

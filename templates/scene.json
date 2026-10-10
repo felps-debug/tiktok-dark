@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scene_id": "replace-me",
+  "status": "draft",
+  "story_version": 1,
+  "script_version": 1,
+  "narrative_function": "",
+  "characters": [],
+  "previous_scene": null,
+  "next_scene": null,
+  "context_before": "",
+  "context_after": "",
+  "initial_state": "",
+  "action": "",
+  "end_state": "",
+  "dialogue": [],
+  "generation_duration_seconds": null,
+  "edit_duration_seconds": null,
+  "clip_ids": [],
+  "continuity": [],
+  "approval": null
+}
