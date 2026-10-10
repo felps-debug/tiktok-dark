@@ -1,0 +1,17 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+cookies.txt
+.DS_Store
+Thumbs.db
