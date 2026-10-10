@@ -9,6 +9,13 @@ Sem referência, o agente pede o link ou arquivo. Com a referência, confere o W
 
 O `/init` do programa continua com sua função original. Para iniciar a produção use a entrada acima. O Maestro é o ambiente que hospeda a sessão; a sintaxe depende do agente aberto nela.
 
+## Personagem animado a partir de uma foto
+No Codex, envie `$profilepic` com a foto anexada ou um caminho acessível. No Claude Code, use `/profilepic`; sem gerador de imagens, ele prepara o prompt para levar ao Codex junto com a mesma foto.
+
+Sem foto, a entrada pede a referência e espera. O padrão é um personagem 3D animado reconhecível, corpo inteiro de frente, fundo branco e formato 9:16. Pode pedir outro estilo na mesma mensagem. Gera uma candidata quando houver ferramenta real de imagem e aguarda sua aprovação. Não é avatar do TikTok; é a referência de identidade do personagem para as cenas.
+
+A skill não instala nem habilita um gerador: em um Codex sem geração de imagens disponível, entrega o prompt e avisa a limitação. O fluxo está em `docs/workflows/profilepic.md`.
+
 ## Atualizar uma cópia já clonada
 Na pasta do projeto, execute `git pull --ff-only`. Se houver alterações locais conflitantes, preserve-as antes de resolver o conflito. Reinicie a sessão Claude Code ou Codex se a nova entrada não aparecer. No Codex, também é possível conferir a skill pelo `/skills`.
 
