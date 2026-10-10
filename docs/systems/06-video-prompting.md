@@ -1,21 +1,13 @@
-# 06 — Image-to-video for Flow
-## Role
-Animate an inspected approved scene image while preserving story, identity and continuity.
-## Reads
-Whole historia.md and roteiro.md, bible, scene and neighbors, relevant character identity/voice records, and the exact approved initial image.
+# 06 — One image-to-video prompt for Flow
+## Role and reads
+Animate the inspected user-approved scene image while preserving story, identity and continuity. Read whole historia.md/roteiro.md, bible, scene/neighbors, character identity/voice records and exact approved first frame internally. Follow docs/prompt-delivery.md.
 ## Process
-1. Confirm actual user approval and inspect the initial image. Describe only visible initial facts; label uncertainty.
-2. Compare the image with required speakers/actions/props. If essential visual information is absent or contradicted, request an upstream image revision; do not repair it by inventing a new visual in video.
-3. Set available generation duration. Count exact dialogue words and estimate usable speech time. 26 words in eight seconds is a historical upper calibration, not a guarantee. Allow room for emotion and pauses.
-4. Prefer one main speaker. Keep listeners silent with mouth closed; identify intentional off-screen voice without inventing an unseen visual identity.
-5. Use one continuous shot and one simple camera movement with stated start/end. Choose a restrained primary action and few secondary gestures.
-6. Write timestamped blocks for initial posture, speech/action and final state. Speech may begin promptly, but need not end on the last frame; reserve readable reaction/transition time.
-7. For connected split clips, use the actual exported final frame of A as B's first-frame anchor when available. Do not claim continuity from a hypothetical frame.
-8. Keep approved dialogue literal in PT-BR with natural delivery and stable voice traits. If it does not fit, propose a split/shortening for approval.
-9. Specify diegetic SFX and the series' music policy. For difficult speech/action combinations, propose silent generation and dubbing as a production option, without claiming equivalence.
-10. Compile video_prompt from the JSON fields, avoiding duplicate/conflicting descriptions.
-## Output
-prompts/videos/scene_XX[_A]_vN.json and .txt using template, attachment path, speech budget and likely QA risks.
-## Check and result
-No redesign, invented character, age/scale drift or contradictory first frame. Preserve series-specific depiction rules; do not formulate filter-bypass instructions.
-User runs Flow. Record actual success/failure feedback, then refine only the affected prompt/upstream asset.
+1. Confirm image approval and inspect it. If the required action, character, prop or spatial arrangement contradicts the image, explain the mismatch and request an upstream revision. Do not silently turn a bench and separate rack into a single rigid machine or invent attachment geometry.
+2. List the exact approved scene image to attach as FIRST FRAME, separately from the prompt. Character identity sheets normally belong to the image stage, not Flow. List additional visual inputs only if the selected supported Flow mode needs them and they exist; never list narrative documents as attachments.
+3. Confirm available duration and internally check dialogue/action fit, with room for pauses/reactions. Preserve approved PT-BR dialogue. If overloaded, propose a split/shortening for approval WITHOUT writing multiple prompts; otherwise generate only the current clip prompt.
+4. Use one continuous shot, static or one restrained justified camera movement, ONE primary action and few secondary gestures. Describe a physically coherent start, action and readable end. Avoid forcing every subsecond, exact centimeter, foot placement and gesture unless essential; simple natural sequence is the default. No arbitrary pose-hold prelude.
+5. Make delivery specific: speaker, audible emotion, natural pace/emphasis/pause, listener expression and silent closed mouth. Preserve observed/modelled comedic timing and relevant diegetic SFX. Do not invent a supposedly established voice; proposed voice traits must be identified outside the prompt before approval. Respect the series music policy.
+6. Deliver ONE self-contained English text prompt, PT-BR dialogue inside quotation marks, following docs/prompt-delivery.md. Use sparse broad timing blocks only when they help speech/action order. No bookkeeping JSON, context_sources, filenames, speech-budget report, risk inventory, duplicate descriptions or automatic Plan B in the delivered prompt.
+7. STOP for explicit approval of this prompt. Corrections yield one replacement prompt and another approval pause. Do not write the next clip, image prompt or alternate version while approval is pending. The user runs Flow after approval and returns the actual result; record only actual feedback.
+## Files and checks
+Save prompts/videos/scene_XX[_A]_vN.md; internal JSON records remain separate. Never create .txt prompt files. No redesign, age/scale drift, impossible initial-state changes or unapproved dialogue changes. A hypothetical end frame is not an approved asset. Revise only affected items, preserving previous approved versions.

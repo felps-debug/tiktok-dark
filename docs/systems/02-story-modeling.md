@@ -9,7 +9,7 @@ Complete reference analysis, evidence limitations, existing series constraints a
 3. Explicitly allow a custom direction or combination. If the user already chose a direction, record it and skip redundant choice.
 4. STOP for the choice before drafting a completed adaptation.
 5. Develop the chosen story collaboratively: roles, world rules, causal sequence, tonal/localization choices and ending.
-6. Map original beat functions to adaptation events. Flag intentionally changed functions.
+6. Map original beat functions AND observed visual/audio humor and emotional cues to adaptation events. Preserve the function of pauses, reactions, delivery and sound/visual contrasts where appropriate; distinguish newly proposed cues from observed evidence. Flag intentionally changed functions.
 7. Estimate duration using concise provisional dialogue and the reference's pacing; avoid expansion through repeated exposition.
 8. Deliver the complete story as a draft and ask for approval. It is not yet a shot list or visual prompt.
 ## Outputs
