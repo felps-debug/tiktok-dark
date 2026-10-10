@@ -30,8 +30,8 @@ A narrative scene can require several generation clips (01A/01B). A clip is not 
 | 02 | Complete analysis and series constraints | DNA, directions, selected direction, whole story | Direction chosen, then story approved |
 | 03 | Approved story, bible, character briefs/style anchors | Character record, front prompt, generated candidate when available | User approves exact character version |
 | 04 | Whole approved story, characters, target duration | Script and scene definitions | User approves script |
-| 05 | Whole story, script, scene and neighbors, actual references | Image JSON + prompt; generated candidate if requested | User approves exact scene image |
-| 06 | Same narrative context + inspected approved image | Video JSON + prompt | User generates in Flow and records result |
+| 05 | Whole story, script, scene and neighbors, actual references | Internal image metadata + one .md prompt; candidate after prompt approval | User approves prompt, then exact scene image |
+| 06 | Same narrative context + inspected approved image | Internal video metadata + one .md prompt | User approves prompt, generates in Flow and records result |
 
 Stages can be revisited. Do not skip a missing approval by inferring it from file existence.
 Use draft, awaiting_approval, approved, rejected and stale. Record approval event as item, path, version, user confirmation and timestamp. Do not impersonate a user approval.
@@ -44,7 +44,7 @@ Historical lessons and old drafts never override current approved canon.
 
 ## Context protocol
 Before an individual scene: read the complete story and existing script, the series bible, involved character records, scene definition and adjacent scene states.
-Inspect visual references instead of inferring them from filenames. Write a short context check with files read, narrative function, initial/end state and missing inputs. Do not expose private reasoning.
+Inspect visual references instead of inferring them from filenames. Keep source-document paths in internal records only. The user-facing context check states narrative purpose and missing inputs briefly; it does not dump the documents read. Do not expose private reasoning.
 References have explicit roles: identity, style_only, continuity or first_frame.
 
 ## Duration and revision
@@ -58,3 +58,6 @@ Watch is an external dependency, not bundled or installed by this repository.
 Image generation requires the runtime's real capability. Without it, supply a copy-ready prompt.
 Google Flow generation remains manual. No upload or successful render is implied by a prompt.
 When evidence or tools are unavailable, record the blocker and work only on independent tasks.
+
+## External prompt delivery
+Follow docs/prompt-delivery.md. Templates/*.json are internal bookkeeping contracts, not the content to paste into Nano Banana or Flow. Save external prompts as versioned .md files; never create .txt copies. Existing .txt files are legacy inputs, not a format to reproduce or delete automatically. Produce one prompt and stop for its approval before proceeding.

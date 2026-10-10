@@ -12,7 +12,7 @@ O `/init` do programa continua com sua função original. Para iniciar a produç
 ## Personagem animado a partir de uma foto
 No Codex, envie `$profilepic` com a foto anexada ou um caminho acessível. No Claude Code, use `/profilepic`; sem gerador de imagens, ele prepara o prompt para levar ao Codex junto com a mesma foto.
 
-Sem foto, a entrada pede a referência e espera. O padrão é um personagem 3D animado reconhecível, corpo inteiro de frente, fundo branco e formato 9:16. Pode pedir outro estilo na mesma mensagem. Gera uma candidata quando houver ferramenta real de imagem e aguarda sua aprovação. Não é avatar do TikTok; é a referência de identidade do personagem para as cenas.
+Sem foto, a entrada pede a referência e espera. O padrão é um personagem 3D animado reconhecível, corpo inteiro de frente, fundo branco e formato 9:16. Pode pedir outro estilo na mesma mensagem. Entrega um único prompt, com a lista de fotos a anexar, e espera sua aprovação. Só depois gera uma candidata quando solicitado e houver ferramenta real de imagem; a imagem também precisa de aprovação separada. Não é avatar do TikTok; é a referência de identidade do personagem para as cenas.
 
 A skill não instala nem habilita um gerador: em um Codex sem geração de imagens disponível, entrega o prompt e avisa a limitação. O fluxo está em `docs/workflows/profilepic.md`.
 
@@ -32,3 +32,6 @@ Os comandos orientam o agente a usar suas ferramentas disponíveis. Não fornece
 Documentação dos formatos:
 - Claude Code: https://code.claude.com/docs/en/skills
 - Codex: https://learn.chatgpt.com/docs/build-skills
+
+## Prompts de cenas e vídeos
+Siga `docs/prompt-delivery.md`: anexos visuais em ordem, um único prompt pronto para copiar e pausa obrigatória para aprovação. Imagens de cenas usam Nano Banana; vídeo usa a imagem de cena aprovada como primeiro frame no Flow. Sem referências a documentos dentro do prompt, sem JSON de controle na entrega e sem arquivos .txt de prompts.
